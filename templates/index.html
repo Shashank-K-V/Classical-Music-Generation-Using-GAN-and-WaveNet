@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Generation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+    <!-- Include the Bootstrap JavaScript library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Classical Music Generation</h1>
+		<p>WaveNet and GAN</p>
+	</div>
+	<div class="banner">
+		<h2>Welcome to our Music Generation Platform</h2>
+		<p>♫♫♫ Create beautiful melodies and harmonies with the power of AI ♫♫♫</p>
+		<button onclick="scrollToCards()">Get Started</button>
+	</div>
+	<div id="cards-section" class="container">
+		<div class="card">
+			<h2>WaveNet</h2>
+			<h3>WaveNet is a deep neural network model known for its ability to generate realistic and high-fidelity audio. It has been widely used for music generation and audio synthesis tasks.</h3>
+			<form method="POST" action="/wave">
+				<button type="submit">WAVENET Music</button>
+			</form>
+		</div>
+
+		<div class="card">
+			<h2>Generative Adversarial Network</h2>
+			<h3>GAN (Generative Adversarial Network) is a machine learning model that can generate new data based on existing patterns. It consists of a generator network and a discriminator network that compete against each other to produce high-quality music.</h3>
+			<form method="POST" action="/gan">
+				<button type="submit">GAN Music</button>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="column">
+		  <h3 class="section-title">About Us</h3>
+		  <p>CREATED BY STUDENTS OF DR. AMBEDKAR INSTITUTE OF TECHNOLOGY</p>
+		</div>
+		
+		<div class="column">
+		  <h3 class="section-title">Contact</h3>
+		  <p>Email: info@example.com</p>
+		  <p>Phone: 123-456-7890</p>
+		</div>
+		
+		<div class="column">
+		  <h3 class="section-title">Follow Us</h3>
+		  <ul>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Instagram</a></li>
+		  </ul>
+		</div>
+	</div>
+	<p class="end">&copy; 2023 Classical Music Generation. All rights reserved. | Designed by STUDENTS</p>
+	
+</body>
+  
+</html>

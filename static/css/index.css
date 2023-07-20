@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.header {
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+.header p {
+    margin: 10px 0;
+  }
+.container {
+    display: flexbox;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.card {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 20px); /* To ensure equal size with spacing */
+  }
+
+.card h2 {
+    color: #333;
+  }
+
+.card p {
+    margin: 10px 0;
+  }
+
+.card form {
+    margin: 10px 0;
+  }
+
+.card button {
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.card button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+.banner {
+    background-image: url('{{ url_for("static", filename="music.jpeg") }}');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+  }
+
+.banner h2 {
+    margin: 0;
+    color: black;
+  }
+
+.banner p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+  }
+
+.banner button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.banner button:hover {
+    background-color: #45a049;
+  }
+.footer,.end {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+.footer p {
+    margin: 0;
+  }
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.footer .column {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+  }
+
+.footer .section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

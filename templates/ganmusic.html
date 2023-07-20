@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Generation page using deep learning</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/midi.js/2.0.0/midi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+</head>
+<body>
+  <div class="header">
+		<h1>Classical Music Generation</h1>
+		<p>WaveNet and GAN</p>
+	</div>
+    <midi-player
+        src="{{ gmusic_url }}"
+        sound-font visualizer="#myVisualizer">
+    </midi-player>
+    <midi-visualizer type="staff" id="myVisualizer"></midi-visualizer>
+    <form method="POST" action="/index">
+        <input type="submit" value=" HOME" class="button">
+    </form>
+    <div class="footer">
+      <div class="column">
+        <h3 class="section-title">About Us</h3>
+        <p>CREATED BY STUDENTS OF DR. AMBEDKAR INSTITUTE OF TECHNOLOGY</p>
+      </div>
+      
+      <div class="column">
+        <h3 class="section-title">Contact</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      
+      <div class="column">
+        <h3 class="section-title">Follow Us</h3>
+        <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="end">&copy; 2023 Classical Music Generation. All rights reserved. | Designed by STUDENTS</p>
+</body>
+  
+</html>
