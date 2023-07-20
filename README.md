@@ -1,5 +1,6 @@
 # Classical-Music-Generation-Using-GAN-and-WaveNet
 
+https://www.jetir.org/view?paper=JETIR2306624
 
 <img width="604" alt="Image 1" src="https://github.com/Shashank-K-V/Classical-Music-Generation-Using-GAN-and-WaveNet/blob/main/Images/img_1.png">
 
