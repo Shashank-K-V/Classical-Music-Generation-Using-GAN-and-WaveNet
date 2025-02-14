@@ -1,4 +1,18 @@
+#### **Classical-Music-Generation-Using-GAN-and-WaveNet**
 # Classical-Music-Generation-Using-GAN-and-WaveNet
+
+This project generates classical music using Generative Adversarial Networks (GAN) and WaveNet. The model learns musical structures and dependencies and generates high-quality audio files.
+
+## Features
+- Generates classical music pieces
+- Uses GAN for learning music structure
+- Generates realistic audio using WaveNet
+
+## Technologies Used
+- **Languages**: Python
+- **Libraries**: TensorFlow, Keras
+- **Model**: GAN, WaveNet
+
 
 https://www.jetir.org/view?paper=JETIR2306624
 
